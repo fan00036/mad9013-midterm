@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+ -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}	
+body{
+	font-size: 62.5%;	
+  /** you can set this as 100% if you want **/
+	background-color: #666;
+}
+h1, h2, h3{
+	font-weight: 700;	
+	color: #000;
+	padding: 10px 20px;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Cedarville Cursive', cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Droid Serif', serif;
+}
+h3{
+	font-size: 2.4rem;
+	font-family: 'Droid Serif', serif;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: #555;		
+}
+p{
+	padding: 10px 20px;
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	padding: 6px 20px;
+	margin-left: 20px;
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout  
+***********************************/
+
+@media screen and (max-width:499px) {
+	.navbar li
+	{	
+	float:left;	
+	width: 50%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+	}
+  .main {float: left;
+	width: 100%;
+	background-color:  #E87352 ;
+	padding: 10px 20px;
+    }
+  .two {float: left;
+	width: 100%;
+	background-color:  #FF7267 ;
+	padding: 10px 20px;
+  }
+  .three{
+    float: left;
+	width: 100%;
+	background-color:  #E85277 ;
+	padding: 10px 20px;
+  }
+} 
+@media screen and (max-width:719px) and (min-width: 500px) {
+	.navbar li
+	{	
+	float:left;	
+	width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+	}
+  .main {float: left;
+	width: 100%;
+	background-color:  #E87352 ;
+	padding: 10px 20px;
+    }
+  .two {float: left;
+	width: 50%;
+	background-color:  #FF7267 ;
+	padding: 10px 20px;
+  }
+  .three{
+    float: left;
+	width: 50%;
+	background-color:  #E85277 ;
+	padding: 10px 20px;
+  }
+	
+}
+
+@media screen and (max-width: 1080px) and (min-width: 720px){
+	
+	.navbar li{
+	float:left;	
+	width: 25%;  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+	}
+  .main {float: left;
+	width: 50%;
+	background-color:  #E87352;
+	padding: 10px 20px;
+    }
+  .two {float: left;
+	width: 25%;
+	background-color:  #FF7267;
+	padding: 10px 20px;
+  }
+  .three{
+    float: left;
+	width: 25%;
+	background-color:  #E85277;
+	padding: 10px 20px;
+  }
+}
+
+@media screen and (min-width: 1081px)
+{
+	.navbar {
+	float: left;
+	width: 20%;
+	}
+	.navbar li{
+	  /* 960/4 = 240  works if the layout is 960*/
+	list-style:none;
+	}
+  .main {
+	float: left;
+	width: 40%;
+	background-color:  #E87352;
+	padding: 10px 20px;
+  }
+  .two {
+	float: left;
+	width: 20%;
+	background-color:  #FF7267;
+	padding: 10px 20px;
+  }
+  .three{
+    float: left;
+	width: 20%;
+	background-color:  #E85277;
+	padding: 10px 20px;
+  }
+}
+
+
+.wrapper{
+	background-color: #fff;	
+}
+.masthead{
+	
+}
+.nav{
+	
+}
+.navbar{
+	
+}
+.main{
+	
+}
+.sidebar{
+	
+}
+.footer{
+	
+}
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	padding: 30px 20px;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+/*.navbar li{
+	float:left;	
+	width: 240px;  /* 960/4 = 240  works if the layout is 960
+	list-style:none;
+}
+*/
+.navbar a{
+	display: block;	
+	padding: 8px 16px;
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: purple;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+	padding: 20px 20px;
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+	clear: both;
+	
+}
